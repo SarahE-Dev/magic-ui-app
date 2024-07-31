@@ -6,6 +6,9 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -30,4 +33,14 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* make it where the scrolbar is hidden */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.active {
+  color: blueviolet;
 }
